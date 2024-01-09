@@ -1,3 +1,268 @@
 
 // @import 'bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
+
+
+header {
+	position: relative;
+	
+	.header-navbar {
+	    height: 80px;
+	    background: #23527C;
+	    box-shadow: 0px 3px 6px #00000029;
+
+	    .brand{
+			margin-left: 14px;
+			margin-top: -4px;
+			img{
+				height: 60px;
+			}
+		}
+		.main-menu{
+		    margin-left: 170px;
+			.navbar-menu{
+				.nav-link{
+					height: 80px;
+					line-height: 66px;
+				}
+				button{
+					margin-top: 22px;
+					margin-left: 12px;
+				}
+			}
+		}
+		
+		a{
+		    text-align: left;
+		    font-size: 14px;
+		    line-height: 21px;
+		    letter-spacing: 0px;
+		    color: #FFFFFF;
+		}
+
+		.live-link{
+
+			.live{
+				color: #FF4B5C;
+			}
+	
+			.no-caret::after {
+				display: none;
+			}
+
+			.flag{
+				height: 21px !important;
+				width: 31px;
+			}
+	
+			.dropdown-menu-center {
+				right: auto;
+				left: 50%;
+				-webkit-transform: translate(-50%, 0);
+				-o-transform: translate(-50%, 0);
+				transform: translate(-50%, 0);
+				width: 890px;
+			}
+	
+			table{
+				width: 100%;
+			}
+	
+			.live-section{
+				img{
+					height: 30px;
+				}
+	
+				tr{
+					border-bottom: 1px solid #f5f5f5;
+					td{
+						padding: 16px 0 16px 16px;
+						font-size: 14px;
+						line-height: 25px;
+						color: #202020;
+					}
+				}
+			}
+	
+			.live-footer{
+				padding: 18px 0 18px 0;
+				a{
+					font-size: 14px;
+					line-height: 19px;
+					color: #23527C;
+					text-decoration: none;
+					margin: 26px 0 27px 0;
+				}
+			}
+	
+			.text {
+				color: $red;
+				display: inline-block;
+				position: relative;
+				.live_circle {
+				   margin: 0;
+				   margin-right: 5px;
+				   float: none;
+				   position: absolute;
+				   left: -15px;
+				   top: 10px;
+				}
+		   }
+
+		   .live-icon{
+		    width: 20px;
+		    margin-top: -2px;
+			}
+		}
+
+		.search-icon{
+			width: 30px;
+			margin-right: 10px;
+			margin-top: 5px;
+			cursor: pointer;
+		}
+	}
+	
+	.dropdown:hover .dropdown-menu {
+	    display: block;
+	    background: #FFFFFF;
+	    box-shadow: 0px 4px 7px #00000029;
+	    border-radius: 0px 0px 8px 8px;
+	}
+	
+	.nav-link:focus, .nav-link:hover {
+	    color: #FFFFFF;
+	}
+	
+	a.dropdown-item {
+	    text-align: left;
+	    font-size: 14px;
+	    line-height: 21px;
+	    letter-spacing: 0px;
+	    color: #23527C;
+	}
+	
+	.dropdown-item:focus, .dropdown-item:hover {
+	    background: #366894;
+	    color: #FFFFFF;
+	}
+
+	.lang-section{
+		padding-right: 39px;
+		.dropdown-menu{
+			min-width: 50px ; 
+		}
+	
+		img{
+			width: 21px;
+			vertical-align: baseline !important;
+		}
+	}
+	
+	.search-footer {
+		
+		display: none;
+		width: 100%;
+	    height: 120px;
+	    background-color: #FFF;
+	    box-shadow: 0px 3px 6px #00000029;
+	    border-radius: 8px;
+		padding: 32px 120px 32px 120px;
+		position: absolute;
+		z-index: 100;
+		
+		.search_input {
+			height: 56px;
+		}
+		
+		.twitter-typeahead {
+			width: 100%;
+			
+			.tt-menu {
+				width: 100%;
+				border-radius: 8px 8px 8px 8px;
+				
+				.suggest-item {
+					
+					height: 40px;
+				    display: block;
+				    background: #FFFFFF 0% 0% no-repeat padding-box;
+				    text-align: left;
+				    padding: 10px;
+					cursor: pointer;
+					font: normal normal normal 14px/19px Noto Sans Armenian;
+					letter-spacing: 0px;
+					color: #B8B8B8;
+				}
+				
+				.suggest-item:hover {
+					background: #EDF5FC 0% 0% no-repeat padding-box;
+					color: #868493;
+				}
+			}
+		}
+		
+	}
+}
+
+
+
+footer{
+	margin-top: 120px;
+	background: #23527C;
+	padding: 57px 40px 20px 40px;
+	box-shadow: 0px 1px 6px #00000029;
+
+	.footer-logo{
+		margin-bottom: 21px;
+		width: 87px;
+	}
+
+	p, a{
+		text-align: left;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0px;
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+
+	.underline{
+
+		float: left;
+
+		&::after{
+			content:""; 
+			float:left; 
+			background:#F1F8FC; 
+			width:100%; 
+			height:3px; 
+			border-radius: 3px;
+			margin-top: 8px;
+		}
+		
+	}
+
+	.main-info {
+		margin-top: 64px;
+		a{
+			margin-bottom: 18px;
+			&:hover{
+				color: #FFFFFF;
+			}
+		}
+	}
+	.contact-as {
+		img{
+			margin-right: 8px;
+		}
+	}
+
+	.social-media{
+		img{
+			width: 30px;
+			margin-right: 12px;
+		}
+	}
+}

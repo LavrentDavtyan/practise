@@ -1,8 +1,26 @@
+
 <header>
-    <nav class="nav">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg header-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand brand" href="">
+        	<img src="{{ asset('images/main_logo2.png') }}" alt="Logo" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse main-menu" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ՄԵՐ ՄԱՍԻՆ
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href=""> ՊԱՏՄՈՒԹՅՈՒՆ </a></li>
+       
+                <li><a class="dropdown-item" href="">ԱՆՁՆԱԿԱԶՄ </a></li>
+              </ul>
+            </li>
+        </div>
+  </nav>
+
 </header>
