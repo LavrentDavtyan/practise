@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChessPlayerController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
@@ -26,5 +27,10 @@ Route::middleware([])->prefix('admin')->group(function () {
     Route::get('/login', [AdminController::class, 'showLoginForm'])->name('loginForm');
     Route::post('/login', [AdminController::class, 'login'])->name('admin.login');
     Route::get('/logout', [AdminController::class, 'logout'])->name('admin.logout');
+    Route::get('/chess-players', [ChessPlayerController::class, 'index'])->name('chess.players');
+    Route::match(['get', 'post'], '/create-update-player/{id?}',[ChessPlayerController::class, 'createUpdatePlayer'])->name('create.update.player');
+    Route::get('/delete-player/{id?}',[ChessPlayerController::class, 'deletePlayer'])->name('delete.player');
+
+
 });
 

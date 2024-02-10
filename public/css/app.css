@@ -11992,7 +11992,7 @@ header .header-navbar .brand img {
   height: 60px;
 }
 header .header-navbar .main-menu {
-  margin-left: 170px;
+  margin-left: 20px;
 }
 header .header-navbar .main-menu .navbar-menu .nav-link {
   height: 80px;
@@ -12185,4 +12185,27 @@ footer .contact-as img {
 footer .social-media img {
   width: 30px;
   margin-right: 12px;
+}
+
+.admin-chess-player {
+  padding-top: 20px;
+}
+.admin-chess-player .grid-section .grid-icon {
+  height: 18px;
+  margin-right: 20px;
+}
+
+.btn-add {
+  background: #FFFFFF;
+  padding: 15px 35px 17px 32px;
+  border: 1px solid #284C96;
+  color: #284C96;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+.btn-add:hover {
+  background: #284C96;
+  color: #FFFFFF;
 }
