@@ -8,21 +8,21 @@
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-2 item">
-            <p > <span class="underline">web_site</span> </p>
+            <p > <span class="underline">@lang('messages.web_site') </span> </p>
             <div class="main-info d-flex flex-column">
-                <a href="">about_us </a>
-                <a href="">news</a>
+                <a href="">@lang('messages.about_us')</a>
+                <a href="">@lang('messages.news')</a>
               
             </div>
         </div>
         <div class="col-lg-2 item">
-            <p >  <span class="underline">contact_us</span></p>
+            <p >  <span class="underline">@lang('messages.contact_us')</span></p>
             <div class="main-info contact-as d-flex flex-column">
             </div>
         </div>
         <div class="col-lg-1 item"></div>
         <div class="col-lg-2">
-            <p style="margin-bottom:32px"> <span class="underline">joun_us</span> </p>
+            <p style="margin-bottom:32px"> <span class="underline">@lang('messages.joun_us')</span> </p>
             <div class="main-info social-media d-flex flex-row">
             </div>
         </div>

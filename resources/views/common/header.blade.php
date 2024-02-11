@@ -12,12 +12,11 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-menu">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              ՄԵՐ ՄԱՍԻՆ
+              @lang('messages.about_us')
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href=""> ՊԱՏՄՈՒԹՅՈՒՆ </a></li>
-       
-                <li><a class="dropdown-item" href="">ԱՆՁՆԱԿԱԶՄ </a></li>
+                <li><a class="dropdown-item" href=""> @lang('messages.history')</a></li>
+                <li><a class="dropdown-item" href=""> @lang('messages.documents') </a></li>
               </ul>
             </li>
         </div>

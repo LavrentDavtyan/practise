@@ -6,7 +6,7 @@
     <div class="containet">
         <div class="row justify-content-center">
               <div class="col-md-4 mt-2">
-                  <form method="POST" action="{{ $case == 'update' && isset($player) ? route('create.update.player', ['id' => $player->id]) : route('create.update.player') }}">
+                  <form method="POST" action="{{ $case == 'update' && isset($player) ? route('create.update.player', ['id' => $player->id]) : route('create.update.player') }}" enctype="multipart/form-data">
                       @csrf
                       <div class="form-group">
                           <label for="name">Անուն</label>
@@ -23,6 +23,10 @@
                               <option value="0" {{ $case == 'update' && isset($player) && $player->gender == 0 ? 'selected' : '' }}>Male</option>
                               <option value="1" {{ $case == 'update' && isset($player) && $player->gender == 1 ? 'selected' : '' }}>Female</option>
                           </select>
+                      </div>
+                      <div class="mb-3">
+                           <label for="fileInput" class="form-label">Choose file</label>
+                           <input type="file" class="form-control" id="fileInput" name="picture">
                       </div>
                       <button type="submit" class="btn btn-primary mt-2">Submit</button>
                     </form>

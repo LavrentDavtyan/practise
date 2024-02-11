@@ -20,7 +20,11 @@ use App\Http\Controllers\AdminController;
 //     return view('welcome');
 // });
 
-Route::get('/', [ HomeController::class, 'index' ] )->name('home');
+Route::group(['prefix' => '{locale?}'], function () {
+    Route::get('/', [ HomeController::class, 'index' ] )->name('home');
+});
+
+
 
 Route::middleware([])->prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.index');
