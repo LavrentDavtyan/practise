@@ -22,14 +22,10 @@ class Controller extends BaseController
 
     protected function checkLogin(Session $session)
     {
-        // Check if the user is logged in based on session data
 
-        // dd($session->exists('admin_id'));
         $adminId = session('admin_id');
 
-        // Check if the user is logged in based on session data
         if (!$adminId) {
-            // Redirect to the login page if the user is not logged in
             return redirect()->route('loginForm');
         }
     }

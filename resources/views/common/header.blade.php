@@ -19,7 +19,27 @@
                 <li><a class="dropdown-item" href=""> @lang('messages.documents') </a></li>
               </ul>
             </li>
+          </ul>
+          <div class="navbar-text">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown lang-section">
+                    @php
+                        $locale = app()->getLocale();
+                    @endphp
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="{{ asset('images/lang/' . $locale . '.png') }}" alt="{{ $locale }}">
+                    </a>
+                    <ul class="dropdown-menu">
+                        @php
+                            $switchLocale = $locale === 'en' ? 'am' : 'en';
+                            $langUrl = route('switch.locale', ['locale' => $switchLocale]);
+                        @endphp
+                        <li><a class="dropdown-item" href="{{ $langUrl }}"><img src="{{ asset('images/lang/' . $switchLocale . '.png') }}" alt="{{ $switchLocale }}"></a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+      </div>
   </nav>
 
 </header>

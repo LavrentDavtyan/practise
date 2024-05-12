@@ -16,12 +16,11 @@
                 <div class="col-3 player">
                     <div class="item">
                         <div class="img_container">
-                            <img src="/image/players/players/{{ $player->picture }}" alt="Player">
+                            <img src="/images/uploads/{{ $player->picture }}" alt="Player">
                         </div>
                         <a href="">
-                            <p class="name">{{ $player->fullname }}</p>
+                            <p class="name">{{ $player->name }}</p>
                         </a>
-                        <p class="rank">{{ $player->rank }}</p>
                         <div class="order">#{{ $key + 1 }}</div>
                     </div>
                 </div>
@@ -39,12 +38,11 @@
                 <div class="col-3 player">
                     <div class="item">
                         <div class="img_container">
-                            <img src="/image/players/players/{{ $player->picture }}" alt="Player">
+                            <img src="/images/uploads/{{ $player->picture }}" alt="Player">
                         </div>
                         <a href="">
-                            <p class="name">{{ $player->fullname }}</p>
+                            <p class="name">{{ $player->name }}</p>
                         </a>
-                        <p class="rank">{{ $player->rank }}</p>
                         <div class="order">#{{ $key + 1 }}</div>
                     </div>
                 </div>

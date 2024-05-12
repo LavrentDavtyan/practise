@@ -40,7 +40,6 @@ class AdminController extends Controller
         if ($admin) {
             $request->session()->put('admin_id', $admin->id); 
 
-            // dd($value = session('admin_id'));
             return redirect()->route('admin.index');
         } else {
             return redirect()->route('admin.login')->withErrors(['email' => 'Invalid credentials']);
