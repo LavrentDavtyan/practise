@@ -12282,6 +12282,7 @@ footer .social-media img {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   position: relative;
+  height: 300px;
 }
 .chess-players .players-items .item .order {
   background: #23527C;
